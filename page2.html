@@ -7,14 +7,21 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Our Adventures</h1>
-    <p>This page is dedicated to the wonderful adventures we've shared together!</p>
-    <button onclick="navigateTo('index.html')">Back to Home</button>
-
-    <script>
-        function navigateTo(page) {
-            window.location.href = page;
-        }
-    </script>
+    <div class="container">
+        <nav class="sidebar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="page2.html">Our Adventures</a></li>
+                <li><a href="page3.html">Memorable Moments</a></li>
+            </ul>
+        </nav>
+        <main class="content">
+            <h1>Our Adventures</h1>
+            <p>This page is dedicated to the wonderful adventures we've shared together!</p>
+            <img src="adventure.jpg" alt="An image of our adventures" style="width:300px;height:auto;">
+            <p>Our journeys have taken us across mountains and valleys, through cityscapes and countryside, each step bringing us closer together...</p>
+        </main>
+    </div>
+    <script src="scripts.js"></script>
 </body>
 </html>
