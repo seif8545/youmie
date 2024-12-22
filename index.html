@@ -12,11 +12,13 @@
     <p>💖 “Together is a wonderful place to be.” 💖</p>
     <p>❤️ “You are my today and all of my tomorrows.” ❤️</p>
     <img src="love.jpg" alt="A romantic image of Soufy and Youmie" style="width:300px;height:auto;">
-    <a href="page2.html"><button>Our Adventures</button></a>
-    <a href="page3.html"><button>Memorable Moments</button></a>
-    <div id="content">
-        <!-- Content will be dynamically updated here -->
-    </div>
-    <script src="scripts.js"></script>
+    <button onclick="navigateTo('page2.html')">Our Adventures</button>
+    <button onclick="navigateTo('page3.html')">Memorable Moments</button>
+
+    <script>
+        function navigateTo(page) {
+            window.location.href = page;
+        }
+    </script>
 </body>
 </html>
