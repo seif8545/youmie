@@ -7,18 +7,22 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Welcome to my online scrapbook of Soufy and Youmie's Love!</h1>
-    <p>🌹 “Every love story is beautiful, but ours is my favorite.” 🌹</p>
-    <p>💖 “Together is a wonderful place to be.” 💖</p>
-    <p>❤️ “You are my everything.” ❤️</p>
-    <img src="love.jpg" alt="A romantic image of Soufy and Youmie" style="width:300px;height:auto;">
-    <button onclick="navigateTo('page2.html')">Our Adventures</button>
-    <button onclick="navigateTo('page3.html')">Memorable Moments</button>
-
-    <script>
-        function navigateTo(page) {
-            window.location.href = page;
-        }
-    </script>
+    <div class="container">
+        <nav class="sidebar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="page2.html">Our Adventures</a></li>
+                <li><a href="page3.html">Memorable Moments</a></li>
+            </ul>
+        </nav>
+        <main class="content">
+            <h1>Welcome to my online scrapbook of Soufy and Youmie's Love!</h1>
+            <p>🌹 “Every love story is beautiful, but ours is my favorite.” 🌹</p>
+            <p>💖 “Together is a wonderful place to be.” 💖</p>
+            <p>❤️ “You are my everything.” ❤️</p>
+            <img src="love.jpg" alt="A romantic image of Soufy and Youmie" style="width:300px;height:auto;">
+        </main>
+    </div>
+    <script src="scripts.js"></script>
 </body>
 </html>
