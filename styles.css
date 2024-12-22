@@ -6,7 +6,6 @@ body {
     color: #880e4f;
 }
 
-
 .container {
     display: flex;
 }
@@ -21,7 +20,12 @@ body {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    z-index: 1;
+    z-index: 2; /* Ensure the button is always above other content */
+    transition: left 0.3s; /* Animate the position change */
+}
+
+.sidebar.show + .toggle-btn {
+    left: 265px; /* Move the button to the right when the sidebar is visible */
 }
 
 .sidebar {
