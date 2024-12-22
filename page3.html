@@ -7,14 +7,21 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Memorable Moments</h1>
-    <p>This page is all about the special moments we've shared!</p>
-    <button onclick="navigateTo('index.html')">Back to Home</button>
-
-    <script>
-        function navigateTo(page) {
-            window.location.href = page;
-        }
-    </script>
+    <div class="container">
+        <nav class="sidebar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="page2.html">Our Adventures</a></li>
+                <li><a href="page3.html">Memorable Moments</a></li>
+            </ul>
+        </nav>
+        <main class="content">
+            <h1>Memorable Moments</h1>
+            <p>This page is all about the special moments we've shared!</p>
+            <img src="moments.jpg" alt="An image of our memorable moments" style="width:300px;height:auto;">
+            <p>From our first meeting to our latest celebration, each moment has been a cherished memory...</p>
+        </main>
+    </div>
+    <script src="scripts.js"></script>
 </body>
 </html>
